@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiplikasjonssiden</title>
+
+    <style>
+        body {
+            background-color: aqua;
+            text-align: center;
+        }
+
+        .oppgave {
+            margin-top: 200px;
+        }
+
+        input {
+            font-size: 25px;
+            padding: 10px;
+            width: 150px;
+        }
+
+        button {
+            font-size: 25px;
+            padding: 5px;
+            width: 150px;
+        }
+        
+    </style>
+
+    <script src="multiplikasjon.js" defer></script>
+</head>
+<body>
+    <div style="display: flex;justify-content: space-between;">
+        <div>
+            <a href="1side.html">
+                Gå tilbake
+            </a>
+        </div>
+        <div style="display: flex; justify-content: flex-start;">
+             <h1>Finn produktet</h1>
+        </div>
+        <div>
+
+        </div>
+
+    </div>
+
+    <div class="oppgave">
+        <span id="tall1" style="font-size: 40px;">?</span>
+        <span style="font-size: 40px;"> * </span>
+        <span id="tall2" style="font-size: 40px;">?</span>
+        <span style="font-size: 40px;"> = </span>
+
+        <input type="number" id="gjetttall" required>
+        <br><br>
+        <button onclick="sjekkSvar()">Svar her</button>
+    </div>
+    <div>
+        <p id="respons">  
+        </p>
+    </div>
+
+
+</body>
+</html>
