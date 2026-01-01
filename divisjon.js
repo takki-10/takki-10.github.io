@@ -37,7 +37,7 @@ function sjekkSvar() {
         console.log("Bruker skrev:", brukerSvar);
         console.log("Riktig svar er:", svar) ;
         nyOppgave(); // ny oppgave når svaret er riktig
-        response.textContent = "Du svarte riktig, prøv neste oppgave"
+        document.getElementById("melding").innerText = "Du svarte riktig, prøv neste oppgave";
         
 
             
@@ -45,7 +45,7 @@ function sjekkSvar() {
         // alert("Feil, prøv igjen!");
         console.log("Bruker skrev:", brukerSvar) ;
         console.log("Bruker skrev", svar) ;
-        response.textContent = "Du svarte feil, prøv igjen"
+        document.getElementById("melding").innerText = "Du svarte feil, prøv igjen";
 
     }
 }
@@ -61,3 +61,8 @@ document.getElementById("gjetttall").addEventListener("keydown", function (event
 
 // Start første oppgave
 nyOppgave();
+
+function respons(){
+    console.log(svar)
+    alert(svar)
+}
