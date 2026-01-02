@@ -40,6 +40,9 @@ function sjekkSvar() {
         
 
             
+    } 
+    else if (brukerSvar == ""){
+        document.getElementById("melding").innerText = "Vær så snill å skriv et tall";
     } else {
         // alert("Feil, prøv igjen!");
         console.log("Bruker skrev:", brukerSvar) ;
