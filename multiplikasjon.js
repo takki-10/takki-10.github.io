@@ -9,8 +9,8 @@ console.log("r:",response)
 // Lager en ny oppgave
 
 function nyOppgave() {
-    tall1 = Math.floor(Math.random() * 1000) + 1;
-    tall2 = Math.floor(Math.random() * 1000) + 1;
+    tall1 = Math.floor(Math.random() * 100) + 1;
+    tall2 = Math.floor(Math.random() * 100) + 1;
 
     document.getElementById("tall1").textContent = tall1;
     document.getElementById("tall2").textContent = tall2;
